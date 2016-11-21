@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Dom</title>
+	<style>
+	html{
+		-webkit-font-smoothing:antialiased;
+	}
+	ul li {
+		list-style-type: none;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<h2>常用的Dom操作</h2>
+			<li>
+				<h3>(1)查找元素:</h3>
+				<p>documen.getElmentById("elem");</p>
+				<p>element.getElmentsByClassName("classname");</p>
+				<p>element.getElmentsByTagName("elemname");</p>
+				<p>element.getElmentsByName("name");</p>
+				<p>documen.querySelector("elem");</p>
+				<p>documen.querySelectorAll("elem");</p>
+			</li>
+			<li>
+				<h3>(2)操作元素属性:</h3>
+				<p>element.getAttribute();</p>
+				<p>element.setAttribute();<span>兼容IE</span>elementNode.setAttributeNode(_);</p>
+			</li>
+			<li>
+				<h3>(3)操作元素内容:</h3>
+				<p>element.innerHTML;</p>
+				<p>element.innerText/textContent</p>
+			</li>
+			<li>
+				<h3>(4)操作元素的值:</h3>
+				<p>inputElement.value</p>
+			</li>
+			<li>
+				<h3>(5)遍历元素:</h3>
+				<p>element.parentNode</p>
+				<p>element.childNodes/children</p>
+				<p>element.previouSibling</p>
+				<p>element.nextSibling</p>
+			</li>
+			<li>
+				<h3>(6)添加元素:</h3>
+				<p>var p=document.createElement("p");<br>element.appendChild(p);</p>
+			</li>
+			<li>
+				<h3>(7)删除元素:</h3>
+				<p>parent.removeChild(child);</p>
+			</li>
+			<li>
+				<h3>(8)替换元素:</h3>
+				<p>parent.replace(newChild,oldChild);</p>
+			</li>
+			<li>
+				<h3>(9)克隆元素:</h3>
+				<p>parent.cloneNode();</p>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
